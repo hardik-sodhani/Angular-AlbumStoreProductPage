@@ -13,7 +13,6 @@ export class ProductService {
   }
 
   getAlbum(id: number) {
-    console.log("Getting album. . .")
     return this._http.get(this._albumUrl).map((response) => {
       return response.json();
     })
